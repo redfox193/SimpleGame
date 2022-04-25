@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/stylerules.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <script src="js/gift1.js"></script>
+	<title>Правила</title>
+</head>
+<body id="main">
+	<div id="wrapper">
+        <div class="block menu">
+            <h1>Правила</h1>
+            <p id="links"><a id="link" href="index.html">Меню</a><a id="link" href="game.html">Игра</a></p>
+        </div>
+        <div class="block intro">
+            <div class="heading">
+                <h2>Управление</h2>
+            </div>
+            <div id="introtext">
+                <p><span>КЛИКАЙ</span> или свайпай <span>ВВЕРХ</span>, чтобы прыгать. 
+                    В воздухе персонаж может сделать ещё <span>ОДИН</span> дополнительный прыжок.
+                </p>
+            </div>
+            <div id="introtext">
+                <p>
+                    Чтобы спрыгнуть с платформы или выполнить резкий рывок вниз в воздухе, свайпни <span>ВНИЗ</span>.
+                </p>
+            </div>
+            <div id="introtext">
+                <p>
+                    Свайпнув <span>ВПРАВО</span>, ты можешь сделать резкий рывок вперёд. Чтобы рвануть ещё раз, подожди, 
+                    пока герой вернётся в начало экрана.
+                </p>
+            </div>
+            <div id="introtext">
+                <p style="text-align: center;">
+                    <span>
+                        ЧТОБЫ СДЕЛАТЬ СВАЙП, НАЖМИ НА ЭКРАН, БЫСТРО ПРОВЕДИ В СТОРОНУ И ЗАТЕМ ОТПУСТИ. 
+                        СВАЙПАТЬ МОЖНО ТОЛЬКО ПО САМОЙ ИГРЕ.
+                    </span>
+                </p>
+            </div>    
+        </div>
+        <div class="block intro">
+            <div class="heading">
+                <h2>Препятствия</h2>
+            </div>
+            <div id="introtext" style="text-align: center;">
+                <p>По пути могут встречаться пики точёные, упав на которые, ты умрёшь.
+                    Будь осторожен!!!
+                </p>                
+            </div>    
+            <div>
+                <img src="mat/index/pikes.png" alt="purple enemies">
+            </div>       
+        </div>
+        <div class="block intro">
+            <div class="heading">
+                <h2>Враги</h2>
+            </div>
+            <div id="introtext" style="text-align: center;">
+                <p>Фиолетовые существа - типичные представители мира кошмаров. Они бесцельно бродят
+                    по пустошам и готовы набросится на любого. Их можно отбросить рывком <span>ВПЕРЁД</span>.
+                </p>  
+            </div>
+            <div id="gifdiv" style="width: 35%">
+                <img id="gif" src="mat/index/Purple.gif" alt="purple enemies">
+            </div>
+            <div id="introtext" style="text-align: center;">  
+                <p>Чёрные существа - это кошмары. Они очень опасны и ниакаие рывки против них не помогут.
+                    Только благословение ангелов может защитить от них.
+                </p>        
+            </div>
+            <div id="gifdiv" style="width: 45%">
+                <img id="gif" src="mat/index/Black.gif" alt="purple enemies">
+            </div>  
+            <div id="introtext" style="text-align: center;">  
+                <p>Ангелы - единственные существа в этом мире, благосклонные к тебе. Коснувшись их <span>МЕЧА</span>, ты получаешь благодать.
+                    Собрав <span>ТРИ</span> благодати, ты получишь их благословение на определённое время.
+                    Благословение защитит тебя абсолютно от всего.
+                </p>          
+            </div>
+            <div id="gifdiv" style="width: 40%">
+                <img id="gif" src="mat/index/Snow_Angel.gif" alt="purple enemies" 
+                onmousedown="this.src=`mat/index/SnowAngelWalk.gif`"
+                onmouseup="this.src=`mat/index/Snow_Angel.gif`"
+                onmouseleave="this.src=`mat/index/Snow_Angel.gif`">
+            </div>  
+        </div>
+        <div class="block floor" onclick="ask()">
+            Copyright @ RedFx All Rights Reserved.
+        </div>
+	</div>
+</body>
+</html>
